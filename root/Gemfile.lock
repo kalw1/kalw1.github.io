@@ -276,6 +276,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-sass-converter
   wdm (>= 0.1.0)
 
 BUNDLED WITH
