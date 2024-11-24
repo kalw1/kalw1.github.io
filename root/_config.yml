@@ -1,5 +1,8 @@
 url: "https://kalw1.github.io" 
 baseurl: "" 
+sass:
+  load_paths:
+    - _sass
 defaults:
   - scope:
       path: ""
