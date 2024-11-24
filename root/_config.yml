@@ -1,5 +1,5 @@
 url: "https://kalw1.github.io" 
-baseurl: "" 
+baseurl: "/websitebuilding/" 
 sass:
   load_paths:
     - _sass
