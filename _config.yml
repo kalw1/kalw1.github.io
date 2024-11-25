@@ -1,0 +1,15 @@
+url: "https://kalw1.github.io" 
+baseurl: "/websitebuilding/" 
+sass:
+  load_paths:
+    - _sass
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
