@@ -1,39 +1,154 @@
-/*
-Error: Invalid CSS after "@import "main"": expected "{", was ";"
-        on line 3 of assets/css/styles.scss
+/* Dark theme styles */
+body {
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
 
-1: ---
-2: ---
-3: @import "main";
-4: // Dark theme styles
-5: body {
-6:   font-family: 'Fira Code', monospace;
-7:   margin: 0;
-8:   padding: 0;
+h1, h2 {
+  color: #ffffff;
+}
 
-Backtrace:
-assets/css/styles.scss:3
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Users/ryanw/Ruby33-x64/lib/ruby/gems/3.3.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Users/ryanw/Ruby33-x64/bin/sass:25:in `load'
-C:/Users/ryanw/Ruby33-x64/bin/sass:25:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@import \"main\"\": expected \"{\", was \";\"\A         on line 3 of assets/css/styles.scss\A \A 1: ---\A 2: ---\A 3: @import \"main\";\A 4: // Dark theme styles\A 5: body {\A 6:   font-family: 'Fira Code', monospace;\A 7:   margin: 0;\A 8:   padding: 0;"; }
+a {
+  color: #268210; /* Light blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  padding: 8px 16px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar li a:hover {
+  background: #268210;
+  color: #121212;
+}
+
+.home-section, .blog-section, .blog-post {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul.social-links li {
+  margin: 5px 0;
+}
+
+ul.blog-list li {
+  margin-bottom: 10px;
+}
+
+.back-link {
+  display: block;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #8e8e8e;
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.content-section h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.content-section p {
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* General image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin: 10px 0;
+}
+
+/* Home page layout */
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* About page layout */
+.about-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Image and caption styling */
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #cccccc; /* Light gray text for dark themes */
+  margin-top: 5px;
+  font-style: italic;
+}
+
